@@ -10,11 +10,11 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['Oovg'],
+  app_name: ['aesthetics-dept'],
   /**
    * Your New Relic license key.
    */
-  license_key: '11492ec24084ab49d4258ff4a24f119a3f93933e',
+  license_key: '06f2a82b6e0261446c9e3ad3d2007ed08b484a9d',
   logging: {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing

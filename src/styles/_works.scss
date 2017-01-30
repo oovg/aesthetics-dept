@@ -1,0 +1,285 @@
+// Works
+
+.works { 
+  margin: 20px 0 0 0;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.work {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  a * { cursor: pointer; transition: color .2s ease-in-out; }
+  a:hover .title, a:hover .number {
+    color: $salmon;
+  }
+  a:hover .rule {
+    background-color: $salmon;
+  }
+  .works-item { 
+    z-index: 0;
+    width: 300px;
+    margin: 25px 25px 100px 25px;
+    vertical-align: top;
+    position: relative;
+    .content {
+      .work-img {
+        position: relative;
+        transition: all .2s ease-in-out; 
+        // border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0;
+      }
+      .meta {
+        margin-top: 30px;
+        .title { 
+          position: relative;
+          margin: 0px;
+        }
+        .number { 
+          position: relative;
+          margin: 0px;
+        }
+        .rule {
+          width: 12px;
+          height: 3px;
+          background-color: $primary-color;
+          margin: 10px 0;
+        }
+      } 
+    }
+    .overlay {
+      opacity: 0;
+      position: absolute;
+      border-radius: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all .3s ease-in-out;
+      &:hover {
+        opacity: .9;
+        width: 100%;
+        height: 100%;
+      }
+      .content {
+        opacity: 1 !important;
+        @include vertical-align();
+        width: 100%;
+        .caption {
+          text-align: center; 
+          color: #fff;
+          line-height: 1.15em;
+          margin: 0 auto 30px auto;
+          padding: 0 25px;
+        }
+        a.button {
+          margin: 0px;
+          color: #fff;
+          border: 2px solid #fff;
+          padding: 10px 15px;
+        }
+        .icon.arrow {
+          width: 14px;
+          height: 14px;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+// Tags
+
+.tags {
+  margin: 30px auto;
+  width: 100%;
+  .item { 
+    display: inline-block;
+    width: auto;
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 30px;
+    color: $subdued;
+    padding: 5px 10px;
+    border: 2px solid; 
+    transition: all .1s linear;
+    &:not(last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+// Filter New
+
+.filter {
+  font-size: 1em;
+  text-align: left;
+  
+  p {
+    font-size: 1em;
+    
+  }
+  .icon.arrow {
+    margin-left: 5px;
+    background-color: $primary-color;
+  }
+  .item {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: $primary-color;
+    width: auto;
+    padding: 0 5px;
+    .ui-chkbox-icon {
+      display: none;
+    }
+    .ui-chkbox-label {
+      width: auto;
+      cursor: pointer;
+      transition: all .1s ease-in-out;
+    }
+    .ui-chkbox-label:after {
+      content: '';
+      width: 0;
+      left:0;
+      text-align: center;
+      height: 6px;
+      @include vertical-align();
+      background-color: $primary-color;
+      transition: all .1s ease-in-out;
+      transform: rotate(-1deg);
+    }
+    .ui-chkbox-label:hover:after {
+      width: 0%;
+      background-color: $salmon;
+      transform: rotate(-1deg);
+    }
+    .ui-chkbox-label:hover {
+      color: $salmon;
+    }
+    &:not(.checked) {
+      .ui-chkbox-label:after {
+        content: '';
+        width: 100%;
+        height: 6px;
+        left: 0;
+        text-align: center;
+        @include vertical-align();
+        background-color: $primary-color;
+        transform: rotate(-1deg);
+      } 
+      .ui-chkbox-label:hover:after {
+        width: 100%;
+        background-color: $salmon;
+        transform: rotate(-1deg);
+      }
+    }
+  }
+}
+
+
+
+// Filter
+
+.filter.tags {
+  margin: 30px auto;
+  width: 100%;
+  .item {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    transition: all .1s linear;
+    cursor: pointer;
+    color: $subdued;
+    &.checked { color: $primary-color; }
+    &.checked:focus, &.checked:active { color: $primary-color;}
+    &:not(.checked):focus, &:not(.checked):active { color: $subdued; }
+    // &:hover { color: $subdued; }
+    &:not(last-child) {
+      margin-right: 1px;
+    }
+    .ui-chkbox {
+    }
+    .ui-chkbox-box {
+    }
+    .ui-chkbox-icon {
+      display: none;
+    }
+    .ui-chkbox-label {
+      border: 2px solid;
+      cursor: pointer;
+      width: auto;
+      padding: 10px 15px 10px 30px;
+      &:after {
+        @include vertical-align();
+        left: 10px;
+        display: inline-block;
+        background-color: none;
+        width: 10px;
+        height: 10px;
+        float: left;
+        content: '';
+        border: 2px solid;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.filter.tags .item {
+  &.checked {
+    transition: all .2s linear;
+    .ui-chkbox-label {
+      &:after {
+        @include vertical-align();
+        left: 10px;
+        display: inline-block;
+        background-color: $primary-color;
+        width: 10px;
+        height: 10px;
+        float: left;
+        content: '';
+        border: 2px solid;
+        border-radius: 50%;
+      }
+      &:hover:after {
+        // background-color: $subdued;
+      }
+    }
+  }
+}
+
+
+// Work-detail
+
+.work-detail {
+  margin: 0 auto;
+  width: 100%;
+  .work-img {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0px;
+    p {
+    font-size: 1.25em;
+    margin: 25px auto !important;
+    color: #aaa;
+    }
+  }
+  p {
+    font-size: 1.25em;
+    margin: 50px auto;
+    color: #aaa;
+  }
+}
+
+
+
+

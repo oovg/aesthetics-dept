@@ -1,0 +1,65 @@
+<section class="feature half" [ngStyle]="{'background-image': 'url(../assets/images/rustic-wood.jpg)'}">
+  <div class="overlay teal"></div>
+  <div class="content filter">
+    <h1>The Office produces work along the full spectrum of design & technology.</h1>
+    <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Branding') !== -1}" name="filter" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
+    <div class="icon arrow"></div>
+    <p-checkbox class="item" name="filter" value="Web" label="Web" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Web') !== -1}"></p-checkbox>
+    <div class="icon arrow"></div>
+    <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Print') !== -1}" name="filter" value="Print" label="Print" [(ngModel)]="filter"></p-checkbox>
+    <div class="icon arrow"></div>
+    <p-checkbox class="item" name="filter" value="Illustration" label="Illustration" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Illustration') !== -1}"></p-checkbox> 
+    <p><span class="fa fa-info-circle"></span> Click a work type to remove it from view.</p> 
+    <!--<div class="filter">
+      <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Branding') !== -1}" name="filter" value="Branding" label="Branding" [(ngModel)]="filter"></p-checkbox>
+      <p-checkbox class="item" [ngClass]="{'checked':filter.indexOf('Print') !== -1}" name="filter" value="Print" label="Print" [(ngModel)]="filter"></p-checkbox>
+      <p-checkbox class="item" name="filter" value="Product" label="Product" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Product') !== -1}"></p-checkbox>
+      <p-checkbox class="item" name="filter" value="Illustration" label="Illustration" [(ngModel)]="filter" [ngClass]="{'checked':filter.indexOf('Illustration') !== -1}"></p-checkbox>
+    </div>-->
+  </div>
+  
+</section>
+
+
+
+
+<!-- List the Works -->
+
+<div class="works">
+  
+  <div *ngFor="let work of works" class="work">
+    <a href="#" [routerLink]="['/works', work.id]">
+    <div class="works-item" *ngIf="test(work.types, filter)" [@ifWorkAnimate]="test(work.types, filter)">
+      <div class="content">
+        <div class="work-img" [ngStyle]="{'background-image': 'url(' + work.images[0].url + ')'}">
+          <div class="overlay" [ngStyle]="{'background-color': '#' + work.color}">
+            <div class="content">
+              <h3 *ngIf="work.caption" class="caption">{{work.caption}}</h3>
+              <a class="button">View <div class="icon arrow"></div></a>
+            </div>
+          </div>
+        </div>
+        <div class="meta">
+          <h6 class="number">No. {{work.id}}</h6>
+          <div class="rule"></div>
+          <h5 class="title">{{work.title}}</h5>
+        </div>
+      </div>
+      
+        <!--<div class="overlay"
+             [ngStyle]="{'background-color': '#' + work.color}">
+          <div class="container">
+            
+            <h6 class="caption">{{work.caption}}</h6>
+            <a href="" [routerLink]="['/works', work.id]" class="button">View Context</a>
+          </div>
+        </div>-->
+      
+      
+    
+    </div>
+    
+    </a>
+  </div>
+  
+</div>

@@ -1,0 +1,162 @@
+// Base
+
+// Imports
+
+@import 'variables';
+@import 'mixins/utilities';
+@import 'typography';
+
+@import 'loader';
+@import 'grid';
+@import 'header';
+@import 'icons';
+@import 'works';
+@import 'media';
+
+// Styles
+
+// * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+  position: relative;
+}
+
+body {
+  font-family: 'sofia-pro', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $primary-color;
+  background-color: $background;
+  text-align: left;
+  font-size: 1em;
+  position: relative;
+}
+
+p { 
+  font-family: 'sofia-pro', sans-serif;
+  text-align: left;
+  line-height: 1.35em;
+  color: $secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'sofia-pro', sans-serif;
+  font-weight: 900;
+  color: $primary-color;
+  text-align: left;
+  line-height: 1.35em;
+}
+
+
+
+img { max-width: 100%; }
+
+a { 
+  text-decoration: none;
+    color: $salmon;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
+  &:hover, &.active {
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+  }
+  &.border-none {
+    border: none !important;
+  }
+}
+
+
+// Buttons
+
+button, a.button {
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 1em;
+  color: $salmon;
+  appearance: none;
+  border: transparent;
+  background-color: transparent;
+  transition: all .2s linear;
+  cursor:pointer;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+// Animations
+
+.route-transition {
+    animation-duration: 2s;
+    opacity: 0;
+    animation-name: fadeOut,fadeIn;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+// Inputs
+
+input[type='checkbox'] {
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  &:focus { outline: none; }
+}
+
+p-checkbox {
+  .ui-helper-hidden-accessible {
+    display: none;
+  }
+}
+
+// Utilities
+
+.center-text {
+  text-align: center;
+}
+
+// Lists
+
+ul { 
+  list-style: none;
+  padding: 0;
+  li { 
+    font-size: 1.25em;
+    text-align: left;
+    padding: 0;
+    text-indent: 0;
+    margin: 0 0 10px 0;
+    color: $secondary;
+  }
+}
+
+

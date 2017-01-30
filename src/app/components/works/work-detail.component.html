@@ -1,0 +1,31 @@
+<section class="feature half" [ngStyle]="{'background-color': '#' + work.color}">
+  <div class="content">
+    <p><a [routerLink]="['/works']" [routerLinkActive]="['active']"><div class="icon arrow rotate180"></div> Work</a></p>
+    <h1>{{work.title}}</h1>
+    <p>{{work.caption}}</p>
+    
+  </div>
+</section>
+
+<section *ngIf="work" class="work-detail">
+  
+  <div class="tags container text">
+      <div class="item" *ngFor="let type of work.types">{{type.name}}</div>
+    </div>
+  
+  <p class="container text" [innerHTML]="work.desc"></p>
+  
+  <div *ngFor="let image of work.images" class="work-img">
+    <p class="container text" *ngIf="image.caption" [innerHTML]="image.caption"></p>
+    <img src="{{image.url}}"/>
+  </div>
+    
+</section>
+
+<section class="feature sliver" [ngStyle]="{'background-color': 'rgba(110,127,211,1)'}">
+  <div class="content">
+    <p><a [routerLink]="['/works']" [routerLinkActive]="['active']"><div class="icon arrow rotate180"></div> Back to Work</a></p>
+  </div>
+</section>
+
+<!--<button (click)="gotoWorksList()">Back to works list</button>-->

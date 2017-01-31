@@ -9,7 +9,7 @@ const Works: Work[] = [
           { name:'Web' }
         ],
         caption: 'Data for the people',
-        desc: 'At <a href="http://hackoregon.org" target="_blank">Hack Oregon</a>, we are building a new platform for data storytelling in partnership with the government and community stakeholders. This project is ongoing and Hack Oregon is hosting a 3 month unconference called Civic Lab for community members to build the Civic platform.<br><br>Visit <a href="http://civiclabpdx.com" target="_blank">Civic Lab</a> to join the effort.<br><br>With quite a bit of product definition work in hand, we formed a popup design team to tackle Branding, translate their previous UX work into higher fidelity UI, and iterate through the unique design problems associated with a storytelling platform heavy on data. As a volunteer-based workforce, we integrated deeply with engineering to develop a workflow to facilitate rapid transition from design into code.',
+        desc: 'With <a href="http://hackoregon.org" target="_blank">Hack Oregon</a>, we are building a new platform for data storytelling in partnership with the government and community stakeholders. This project is ongoing and Hack Oregon is hosting a 3 month unconference called Civic Lab for community members to build the Civic platform.<br><br>Visit <a href="http://civiclabpdx.com" target="_blank">Civic Lab</a> to join the effort.<br><br>With quite a bit of product definition work in hand, we formed a popup design team to tackle Branding, translate their previous UX work into higher fidelity UI, and iterate through the unique design problems associated with a storytelling platform heavy on data. As a volunteer-based workforce, we integrated deeply with engineering to develop a workflow to facilitate rapid transition from design into code.',
         color: '220f25',
         images: [] = [
           {
@@ -62,7 +62,7 @@ const Works: Work[] = [
           { name: 'Web' }
         ], 
        caption: 'Under the stars',
-       desc: 'LandApart is a land sharing platform that connects campers with private lands for unique outdoor experiences. The current method used to discover, book and enjoy camping rarely delivers the ideal outdoor experience. So, we looked to leverage tech and the untapped supply of private land to redesign the outdoor experience for the modern traveler. Essentially, the platform functions as an Airbnb for outdoor spaces. A listing can be a campsite, treehouse, or space suitable for larger gatherings.<br><br>Along with heading Branding, Design and Frontend efforts, I am also acting CEO facilitating an amazing team working real hard to keep private land wild and deliver quality time in nature.',
+       desc: 'LandApart is a land sharing platform that connects campers with private lands for unique outdoor experiences. The current method used to discover, book and enjoy camping rarely delivers the ideal outdoor experience. So, we looked to leverage tech and the untapped supply of private land to redesign the outdoor experience for the modern traveler. Essentially, the platform functions as an Airbnb for outdoor spaces. A listing can be a campsite, treehouse, or space suitable for larger gatherings.<br><br>Along with heading Branding, Design and Frontend efforts, Ven is also acting CEO facilitating an amazing team working real hard to keep private land wild and deliver quality time in nature.<br><br>Visit <a href="https://www.landapart.com/" target="_blank">LandApart</a>.',
        color: '232339',
        images: [] = [
           {
@@ -147,7 +147,7 @@ const Works: Work[] = [
           { name: 'Web' }
         ],
        caption: 'Ephemera Subscription Service',
-       desc: 'Landfill Quarterly is an art ephemera archive and subscription service. For each issue, subscribers receive a handmade printed journal along with physical ephemera from various art exhibits and installations. Each issue was themed and designed separately to match. The website styles were also designed to adjust along with the theme for each issue.',
+       desc: 'Landfill Quarterly is an art ephemera archive and subscription service. For each issue, subscribers receive a handmade printed journal along with physical ephemera from various art exhibits and installations. Each issue was themed and designed separately to match. The website styles were also designed to adjust along with the theme for each issue.<br><br>Visit <a href="http://thelandfill.org/" target="_blank">live</a>.',
        color: 'ee4037',
        images: [] = [
           {
@@ -228,7 +228,7 @@ const Works: Work[] = [
           { name: 'Print' }
         ],
        caption: 'San Francisco printed in 3D',
-       desc: 'For the Art Crank show in San Francisco. There has always been much talk of the difficulty of riding a bike in SF. The hills, of course, are seen as the problem, though they are much more a puzzle. I had a brass die hand-sculpted of the city to create a three dimensional poster with 12 layers of topographic variance.',
+       desc: 'For the Art Crank show in San Francisco. There has always been much talk of the difficulty of riding a bike in SF. The hills, of course, are seen as the problem, though they are much more a puzzle. Ven had a brass die hand-sculpted of the city to create a three dimensional poster with 12 layers of topographic variance.',
        color: '220f25',
        images: [] = [
           {
@@ -255,7 +255,7 @@ const Works: Work[] = [
           { name: 'Illustration' }
         ],
        caption: 'Pong, IRL',
-       desc: 'The theme for this issue of Hippy Shit was Make believe its your first time. I thought back to my first digital interaction, PONG, and built and shot it IRL. Complete with cubic ball.',
+       desc: 'The theme for this issue of Hippy Shit was Make believe its your first time. Ven thought back to his first digital interaction, PONG, and built and shot it IRL. Complete with cubic ball.',
        color: '9ea5dc',
        images: [] = [
           {
@@ -298,7 +298,7 @@ const Works: Work[] = [
           { name: 'Illustration' }
         ],
        caption: 'Broken Camera = Illustrations',
-       desc: 'On a recent adventure Iceland, my camera broke on the first day. I had acquired some markers back in Reykjavik, so instead of photography, I made quick tiny illustrations of various vistas. As one would expect, I became much more familiar with these landforms as I meticulously followed every contour over time, as opposed to just simply pushing a button and looking at them later. With only 4 colors to work with, I developed a color code. Black = Rock. Blue = Ice, Snow, and Water. Green = Moss, Red = Humans or human constructs. I borrowed a yellow marker from a cohort for the sun rays that appeared over Svinasfelljokull.',
+       desc: 'On a recent adventure Iceland, my camera broke on the first day. Ven had acquired some markers back in Reykjavik, so instead of photography, he made quick tiny illustrations of various vistas. As one would expect, he became much more familiar with these landforms as he meticulously followed every contour over time, as opposed to just simply pushing a button and looking at them later. With only 4 colors to work with, he developed a color code. Black = Rock. Blue = Ice, Snow, and Water. Green = Moss, Red = Humans or human constructs. I borrowed a yellow marker from a cohort for the sun rays that appeared over Svinasfelljokull.',
        color: '000000',
        images: [] = [
           {
@@ -334,7 +334,7 @@ const Works: Work[] = [
           { name: 'Print' }
         ],
        caption: 'Interactive Print',
-       desc: 'Bike shops typically have a basic spreadsheet style graphic to represent gear ratio data. I wanted to provide them with a poster that is much less visually oppressive and more fun to use. Furthermore, laymen can quickly compare and understand gear ratios and how it affects their ride.<br><br>The poster was converted into metric (Metres of Development) and published in <a href="http://soigneur.com" target="_blank">Soigneur</a> magazine out of Rotterdam.<br><br>The first run of 600 posters sold out in a couple months. A second edition updated to include both US and Metric units of measure is planned for release.',
+       desc: 'Bike shops typically have a basic spreadsheet style graphic to represent gear ratio data. We wanted to provide them with a poster that is much less visually oppressive and more fun to use. Furthermore, laymen can quickly compare and understand gear ratios and how it affects their ride.<br><br>The poster was converted into metric (Metres of Development) and published in <a href="http://soigneur.com" target="_blank">Soigneur</a> magazine out of Rotterdam.<br><br>The first run of 600 posters sold out in a couple months. A second edition updated to include both US and Metric units of measure is planned for release.',
        color: 'bec263',
        images: [] = [
           {
@@ -366,7 +366,7 @@ const Works: Work[] = [
           { name: 'Illustration' }
         ],
        caption: 'Brief Concepts',
-       desc: 'As a design thinker as well as an amateur physicist, I have an extreme interest in dimensionality and its effects on our perception. What started as a simple idea of visually representing various theories of dimensionality turned into a rabbit hole of deep investigation. A year later, the zine was finished and functions as a primer for those interested in understanding dimensionality. Within each spread, the left page is a quote that correlates to the dimension in question and, on the right, a visual approximation and brief description of the dimension and associated theory.',
+       desc: 'As a design thinker as well as an amateur physicist, Ven has an extreme interest in dimensionality and its effects on our perception. What started as a simple idea of visually representing various theories of dimensionality turned into a rabbit hole of deep investigation. A year later, the zine was finished and functions as a primer for those interested in understanding dimensionality. Within each spread, the left page is a quote that correlates to the dimension in question and, on the right, a visual approximation and brief description of the dimension and associated theory.',
        color: '272344',
        images: [] = [
           {
@@ -413,7 +413,7 @@ const Works: Work[] = [
           { name: 'Illustration' }
         ],
        caption: '',
-       desc: 'Kathleeen is an author and wanted a site redesign in conjunction with the release of her new book, <em>The Best Worst Thing</em>. A visual language was constructed around book and cover design. Utilizing her existing Squarespace framework, plenty of hacking was required to achieve the look and feel desired, while maintaining her ability to frequently update her audience with fresh content.',
+       desc: 'Kathleeen is an author and wanted a site redesign in conjunction with the release of her new book, <em>The Best Worst Thing</em>. A visual language was constructed around book and cover design. Utilizing her existing Squarespace framework, plenty of hacking was required to achieve the look and feel desired, while maintaining her ability to frequently update her audience with fresh content.<br><br>Visit <a href="http://kathleenlane.net/" target="_blank">live</a>.',
        color: 'e7c645',
        images: [] = [
           {

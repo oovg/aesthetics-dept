@@ -18,14 +18,6 @@
 
 @media all and (max-width: 1100px) {
   
-  .work {
-    display: inline-block;
-    .works-item {
-      width: 280px;
-    }
-  }
-
-  
   
   h1, h2, h3 {
     font-size: 2.5em;
@@ -62,11 +54,13 @@
     .works-item {
       width: 280px;
       margin: 25px auto 100px auto;
-    }
-    .work-img {
-      width: 280px;
-      height: 280px;
-      margin: 0 auto;
+      .content {
+        .work-img {
+          width: 280px;
+          height: 280px;
+          margin: 0 auto;
+        }
+      }
     }
   }
   
